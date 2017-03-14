@@ -4,3 +4,6 @@ __author__ = 'Administrator'
 a=[5,6,7,8,9,10,23,45]
 for x in a[-1::-1]:
     print(x)
+	
+	
+	
