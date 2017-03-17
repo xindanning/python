@@ -4,11 +4,11 @@ __author__ = 'Administrator'
 import unittest  #引入unittest 框架
 from learnpython.test0311 import TestMath    #from...import
 
-suite=unittest.TestSuite()
-suite.addTest(TestMath("test_jia"))
+suite=unittest.TestSuite()         #创建测试集实例
+suite.addTest(TestMath("test_jia"))         #固定写法，指明添加的是哪个测试类下的什么测试方法
 suite.addTest(TestMath("test_jian"))
 suite.addTest(TestMath("test_cheng"))
 suite.addTest(TestMath("test_chu"))
 
-runner=unittest.TextTestRunner()
+runner=unittest.TextTestRunner()        #创建执行的实例
 runner.run(suite)
