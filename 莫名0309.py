@@ -7,7 +7,7 @@ __author__ = 'Administrator'
 
 
 class Math:
-    def __init__(self,a,b=1):
+    def __init__(self,a,b):
         self.a=a
         self.b=b
 
@@ -25,7 +25,7 @@ class Math:
         return(self.a/self.b)
 
 
-math_1=Math(4)
+math_1=Math(2,4)
 math_1.jia()
 math_1.jian()
 math_1.cheng()
