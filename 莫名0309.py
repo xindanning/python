@@ -30,8 +30,8 @@ math_1.jia()
 math_1.jian()
 math_1.cheng()
 math_1.chu()
-
-
+print(math_1.jia())
+'''
 #第二题：
 #写一个类：倒序排列某个字符串， 要求如下：
 #1)有一个初始化函数， 传递你需要倒序排列的字符串；
@@ -49,6 +49,5 @@ class Daoxu():
 
 c=Daoxu("asdffjgkl")
 c=c.pailie()
-
-
+'''
 
