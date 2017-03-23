@@ -1,4 +1,7 @@
 __author__ = 'Administrator'
+#一、 对http类型的接口测试进行封装，封装成类，要求如下：
+#1）类里面包含get和post请求两个函数；
+#2）创建实例来进行调用
 import  urllib.request
 import  urllib.parse    #引入模块对数据进行转码
 
