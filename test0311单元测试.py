@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 import unittest
-from learnpython.莫名0309 import Math
+from learnpython.莫名0309类 import Math
 
 class TestMath(unittest.TestCase):
 

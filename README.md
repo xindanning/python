@@ -1,5 +1,3 @@
-# hello-world
-my first project
-Can I write Chinese?
-我要写中文了哈哈哈哈
-我要学Python，加油！
+# Python学习
+test开头为课堂代码
+莫名开头为作业代码

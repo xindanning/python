@@ -4,12 +4,15 @@ __author__ = 'Administrator'
 #2）创建实例来进行调用
 import  urllib.request
 import  urllib.parse    #引入模块对数据进行转码
+import configparser
 
 class TestInterface:
-    def __init__(self,url,key,date):
-        self.url=url
-        self.key=key
-        self.date=date
+    def __init__(self):
+        cf=configparser.ConfigParser()
+        cf.read("test.conf")
+        self.key=cf["http"]["key"]
+        self.date=cf["http"]["date"]
+        self.url=cf["http"]["url"]
 
 
     def interface_get(self):
@@ -36,9 +39,10 @@ class TestInterface:
         return result_2
 
 
-get_1=TestInterface("http://v.juhe.cn/laohuangli/d","a8f2732319cf0ad3cce8ec6ef7aa4f33","2017-03-21")
-print("get请求结果为",get_1.interface_get())
-print("post请求结果为",get_1.interface_post())
+#get_1=TestInterface("http://v.juhe.cn/laohuangli/d","a8f2732319cf0ad3cce8ec6ef7aa4f33","2017-03-21")
+get_1 = TestInterface()
+print("get请求结果为", get_1.interface_get())
+print("post请求结果为", get_1.interface_post())
 
 
 

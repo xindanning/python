@@ -1,5 +1,6 @@
 __author__ = 'Administrator'
 #4、 新建一个xls,有两列， 分别是name和sex,写入100行数据， 第一列为随机的名字， 第二列为随机的sex（ 1,2）
+#使用xlrd读取该excel,统计每个sex的name数量， 并打印出来。
 import xlwt3
 import random
 import  xlrd
