@@ -23,6 +23,8 @@ def insert_value(path):
     sheet_new.write(0, 0, "name")
     sheet_new.write(0, 1, "sex")
     for i in range(1,101):
+        name=create_value('abcdefg',3)
+        sex=create_value('01',1)
         sheet_new.write(i,0,name)
         sheet_new.write(i,1,sex)
         workbook_new.save(path)
@@ -33,16 +35,17 @@ def insert_value(path):
 def count_sex(path):
     workbook=xlrd.open_workbook(path)
     sheet_obj=workbook.sheet_by_index(0)#按索引读第一个sheet
-    c=0
-    d=0
+    c = 0
+    d = 0
     for i in range(1,sheet_obj.nrows):
         k=int(sheet_obj.cell_value(i,1))
-        if (k==1):
+        if k:
          c=c+1
         else:
          d=d+1
-    return c,d
     print(c,d)
+    return c,d
+
 
 
 insert_value("D://zuoye.xls")
